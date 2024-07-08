@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Set the recipient email address
-    $to = 'kpreece@kimberlypreece.tech';
+    $to = 'jessijones@email.com'; // enter your email address here
 
     // Set the email subject
     $email_subject = 'New Form Submission';
