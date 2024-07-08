@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="_css/site.css">
+    <script src="_js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="site-logo">
+            <img src="images/kimberlylogodark2.jpg" alt="logo">
+        </div>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <div class="container-main">
+        <center>
+            <p>If you would like to contact me further, please fill out the form below. I will respond as soon as possible. Thank you!</p>
+        </center>
+    </div>
+
+    <div class="cont">
+        <form method="post" action="send-email.php" class="w3-container w3-light-blue w3-text-deep-purple">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name..." required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email..." required>
+
+            <label for="subject">Subject:</label>
+            <textarea id="subject" name="subject" placeholder="Insert your message here..." required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="footer">
+        &copy; Kimberly Preece 2023 | Last modified: <span id="lastModified"></span>
+    </div>
+
+    <script>
+        // JavaScript to display last modified date
+        const lastModified = new Date(document.lastModified);
+        const lastModifiedSpan = document.getElementById("lastModified");
+        lastModifiedSpan.textContent = lastModified.toLocaleString();
+    </script>
+</body>
+</html>
+
+

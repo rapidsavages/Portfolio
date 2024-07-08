@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>K. Preece Web Development</title>
+    <link rel="stylesheet" href="_css/site.css">
+    <script src="_js/script.js" defer></script>
+</head>
+<body>
+<header>
+ <div class="site-logo">
+    <img src="images/kimberlylogodark2.jpg" alt="logo">
+  </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</header>
+ <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Hi, I'm Kimberly Preece</h1>
+            <p>Front-end Developer & Web Designer</p>
+            <a href="projects.html" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill-item">
+                <img src="images/html5logo.png" alt="HTML5">
+                <p>HTML5</p>
+            </div>
+            <div class="skill-item">
+                <img src="images/css3logo.png" alt="CSS3">
+                <p>CSS3</p>
+            </div>
+            <div class="skill-item">
+                <img src="images/jslogo.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+			<div class="skill-item">
+                <img src="images/jquerylogo.png" alt="jQuery">
+                <p>jQuery</p>
+            </div>
+			<div class="skill-item">
+                <img src="images/phplogo.png" alt="PHP">
+                <p>PHP</p>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        &copy; Kimberly Preece 2023 | Last modified: <span id="lastModified"></span>
+    </div>
+
+    <script>
+        // JavaScript to display last modified date
+        const lastModified = new Date(document.lastModified);
+        const lastModifiedSpan = document.getElementById("lastModified");
+        lastModifiedSpan.textContent = lastModified.toLocaleString();
+    </script>
+</body>
+</html>
+
+
+

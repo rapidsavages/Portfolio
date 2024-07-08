@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>K. Preece Web Development</title>
+    <link rel="stylesheet" href="_css/site.css">
+    <script src="_js/script.js" defer></script>
+</head>
+<body>
+  <header>
+ <div class="site-logo">
+   <img src="images/kimberlylogodark2.jpg" alt="logo">
+  </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</header>
+	<div class="main-image">
+        <p><img class="align-right medium" width="300" height="300" src="images/mainpic.jpg" alt="My Headshot"></p>
+    </div>
+<div class="collage-container"></div> <!-- Collage container -->
+    <div id="about">
+        <h2>Curious to know who I am?</h2>
+        <p id="aboutText1"> I am a passionate web developer with a strong foundation in programming. 
+                    I hold a Bachelor's degree in Computer Information Systems, which has provided me with a solid understanding of various technical 
+                    concepts and principles. My expertise lies in front-end web development, and I am proficient in HTML, CSS, jQuery, JavaScript, with foundational knowledge
+					in C# and ASP.Net.</p>
+        <p id="aboutText2"> I have a keen eye for design and strive to create visually appealing and user-friendly websites. I enjoy the process of transforming ideas 
+                into functional and interactive web experiences.</p>
+        <p id="aboutText3">Throughout my journey as a web developer, I have gained hands-on experience in developing
+                    responsive and accessible websites. I am well-versed in modern web development frameworks and tools, enabling me to build dynamic and robust 
+                    web applications. I am passionate about staying up-to-date with the latest trends and technologies in the web development industry. 
+                    I believe in continuous learning and enjoy taking on new challenges to enhance my skills and broaden my knowledge.
+                    I am excited to collaborate on projects that allow me to leverage my technical skills and contribute to the success of innovative web solutions.
+                    Please feel free to reach out to me for any web development opportunities or to learn more about my work.</p>
+    </div>
+
+    <div class="footer">
+        &copy; Kimberly Preece 2023 | Last modified: <span id="lastModified"></span>
+    </div>
+
+    <script>
+        // JavaScript to display last modified date
+        const lastModified = new Date(document.lastModified);
+        const lastModifiedSpan = document.getElementById("lastModified");
+        lastModifiedSpan.textContent = lastModified.toLocaleString();
+    </script>
+</body>
+</html>
+       
